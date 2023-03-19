@@ -7,7 +7,8 @@ use futures::{
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
-    let url = "https://github.com/jpcamara/jsonline_gzip_streaming/raw/main/reviews.json.gz";
+    // let url = "https://github.com/jpcamara/jsonline_gzip_streaming/raw/main/reviews.json.gz";
+    let url = "https://github.com/jpcamara/jsonline_gzip_streaming/raw/main/example.json.gz";
     let response = reqwest::get(url).await?;
     let reader = response
         .bytes_stream()

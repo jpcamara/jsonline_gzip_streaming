@@ -1,6 +1,7 @@
 //const resp = await fetch('https://github.com/jpcamara/jsonline_gzip_streaming/raw/main/reviews.json.gz')
 
-const url = 'https://github.com/jpcamara/jsonline_gzip_streaming/raw/main/reviews.json.gz'
+// const url = 'https://github.com/jpcamara/jsonline_gzip_streaming/raw/main/reviews.json.gz'
+const url = 'https://github.com/jpcamara/jsonline_gzip_streaming/raw/main/example.json.gz'
 
 const response = await fetch(url);
 const decompressionStream = new DecompressionStream('gzip');
