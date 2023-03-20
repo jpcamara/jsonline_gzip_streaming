@@ -1,0 +1,3 @@
+- `rvm use ruby-3.2.1` w/ yjit enabled
+- `bundle`
+- `bundle exec ruby --yjit ruby/main.rb`
